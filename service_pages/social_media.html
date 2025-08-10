@@ -19,22 +19,51 @@
 </head>
 <body class="antialiased bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
 
-  <header class="bg-gray-100 dark:bg-gray-800 shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center rounded-b-lg">
-      <div class="flex items-center">
-          <a href="../index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">ThryveOps</a>
-          <span class="ml-2 text-sm text-gray-500 dark:text-gray-400 hidden sm:block">Digital Brand Scaling</span>
+  <!-- Header Section -->
+  <header class="bg-gray-100 dark:bg-gray-800 shadow-sm py-4 px-6 md:px-12 lg:px-24 rounded-b-lg">
+      <div class="flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center">
+              <a href="../index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">ThryveOps</a>
+              <span class="ml-2 text-sm text-gray-500 dark:text-gray-400 hidden sm:block">Digital Brand Scaling</span>
+          </div>
+          
+          <!-- Desktop Navigation -->
+          <nav class="hidden md:flex items-center">
+              <ul class="flex space-x-4">
+                  <li><a href="../index.html" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Home</a></li>
+                  <li><a href="../index.html#services" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a></li>
+                  <li><a href="../index.html#mission" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Our Mission</a></li>
+                  <li><a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a></li>
+              </ul>
+              <button id="theme-toggle" class="ml-6 p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
+                  <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                  <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.95 15.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM2.707 6.707a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 10a1 1 0 11-2 0 1 1 0 012 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              </button>
+          </nav>
+
+          <!-- Mobile menu button and theme toggle -->
+          <div class="md:hidden flex items-center space-x-2">
+              <button id="theme-toggle-mobile" class="p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
+                  <svg id="theme-toggle-dark-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                  <svg id="theme-toggle-light-icon-mobile" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.95 15.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM2.707 6.707a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 10a1 1 0 11-2 0 1 1 0 012 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+              </button>
+              <button id="mobile-menu-button" class="p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+              </button>
+          </div>
       </div>
-      <nav class="flex items-center">
-          <ul class="flex space-x-4">
-              <li><a href="../index.html" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Home</a></li>
-              <li><a href="../index.html#services" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a></li>
-              <li><a href="../index.html#mission" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Our Mission</a></li>
-              <li><a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a></li>
-          </ul>
-          <button id="theme-toggle" class="ml-6 p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
-              <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-              <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.95 15.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM2.707 6.707a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 10a1 1 0 11-2 0 1 1 0 012 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-          </button>
+
+      <!-- Mobile Navigation Menu -->
+      <nav id="mobile-menu" class="hidden md:hidden mt-4">
+          <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-200 dark:bg-gray-700 rounded-lg">
+              <a href="../index.html" class="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition duration-300 ease-in-out rounded-md">Home</a>
+              <a href="../index.html#services" class="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition duration-300 ease-in-out rounded-md">Services</a>
+              <a href="../index.html#mission" class="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition duration-300 ease-in-out rounded-md">Our Mission</a>
+              <a href="../index.html#contact" class="block px-3 py-2 text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-gray-300 dark:hover:bg-gray-600 font-medium transition duration-300 ease-in-out rounded-md">Contact</a>
+          </div>
       </nav>
   </header>
 
@@ -226,61 +255,72 @@
     </div>
   </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const themeToggle = document.getElementById('theme-toggle');
-            const darkIcon = document.getElementById('theme-toggle-dark-icon');
-            const lightIcon = document.getElementById('theme-toggle-light-icon');
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleMobile = document.getElementById('theme-toggle-mobile');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const darkIconMobile = document.getElementById('theme-toggle-dark-icon-mobile');
+        const lightIconMobile = document.getElementById('theme-toggle-light-icon-mobile');
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-            // Mobile menu toggle
-            if (mobileMenuButton) {
-                mobileMenuButton.addEventListener('click', function () {
-                    mobileMenu.classList.toggle('hidden');
-                });
-            }
+        // Mobile menu toggle
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
 
-            // Theme toggle
-            // Change the icons inside the button based on previous settings
-            if (localStorage.getItem('color-theme') === 'light' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
-                document.documentElement.classList.remove('dark')
-                if (lightIcon) lightIcon.classList.remove('hidden');
-            } else {
-                document.documentElement.classList.add('dark')
+        // Function to update theme icons
+        function updateThemeIcons(isDark) {
+            if (isDark) {
                 if (darkIcon) darkIcon.classList.remove('hidden');
+                if (lightIcon) lightIcon.classList.add('hidden');
+                if (darkIconMobile) darkIconMobile.classList.remove('hidden');
+                if (lightIconMobile) lightIconMobile.classList.add('hidden');
+            } else {
+                if (darkIcon) darkIcon.classList.add('hidden');
+                if (lightIcon) lightIcon.classList.remove('hidden');
+                if (darkIconMobile) darkIconMobile.classList.add('hidden');
+                if (lightIconMobile) lightIconMobile.classList.remove('hidden');
             }
+        }
 
-            if (themeToggle) {
-                themeToggle.addEventListener('click', function() {
-                    // toggle icons
-                    if (darkIcon) darkIcon.classList.toggle('hidden');
-                    if (lightIcon) lightIcon.classList.toggle('hidden');
-
-                    // if set via local storage previously
-                    if (localStorage.getItem('color-theme')) {
-                        if (localStorage.getItem('color-theme') === 'light') {
-                            document.documentElement.classList.add('dark');
-                            localStorage.setItem('color-theme', 'dark');
-                        } else {
-                            document.documentElement.classList.remove('dark');
-                            localStorage.setItem('color-theme', 'light');
-                        }
-
-                    // if NOT set via local storage previously
-                    } else {
-                        if (document.documentElement.classList.contains('dark')) {
-                            document.documentElement.classList.remove('dark');
-                            localStorage.setItem('color-theme', 'light');
-                        } else {
-                            document.documentElement.classList.add('dark');
-                            localStorage.setItem('color-theme', 'dark');
-                        }
-                    }
-                });
+        // Function to toggle theme
+        function toggleTheme() {
+            const isDarkMode = document.documentElement.classList.contains('dark');
+            
+            if (isDarkMode) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+                updateThemeIcons(false);
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+                updateThemeIcons(true);
             }
-        });
-    </script>
+        }
+
+        // Initialize theme
+        if (localStorage.getItem('color-theme') === 'light' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+            document.documentElement.classList.remove('dark');
+            updateThemeIcons(false);
+        } else {
+            document.documentElement.classList.add('dark');
+            updateThemeIcons(true);
+        }
+
+        // Theme toggle event listeners
+        if (themeToggle) {
+            themeToggle.addEventListener('click', toggleTheme);
+        }
+        if (themeToggleMobile) {
+            themeToggleMobile.addEventListener('click', toggleTheme);
+        }
+    });
+  </script>
 
 </body>
 </html>
