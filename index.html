@@ -32,7 +32,7 @@
             <ul class="flex space-x-4">
                 <li><a href="#" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Home</a></li>
                 <li><a href="#services" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a></li>
-                <li><a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">About Us</a></li>
+                <li><a href="#mission" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Our Mission</a></li>
                 <li><a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a></li>
             </ul>
             <button id="theme-toggle" class="ml-6 p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
@@ -52,14 +52,15 @@
                 Get <b>more leads</b>, <b>more customers</b>, <b>more sales</b>, and <b>more revenue</b> with a strong digital presence tailored to your business. <b>Let your business Thryve</b>.
             </p>
             <a href="#contact" class="inline-block bg-white text-indigo-700 hover:bg-indigo-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                Book A <b>Free</b> Consultation Today
+                Get A <b>Free</b> Consultation Today
             </a>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50 dark:bg-gray-800 m-4 rounded-lg shadow-md">
-        <h3 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 dark:text-indigo-300 mb-12">Our Core Services</h3>
+                <h3 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 dark:text-indigo-300 mb-4">Our Core Services</h3>
+        <p class="text-lg text-center text-gray-600 dark:text-gray-400 mb-12 max-w-3xl mx-auto">Click a card to learn more and see pricing information</p>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Service Card 1 -->
             <a href="service_pages/website_development.html" class="block transform hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -94,9 +95,10 @@
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="py-16 px-6 md:px-12 lg:px-24 bg-white dark:bg-gray-800 m-4 rounded-lg shadow-md">
-      <h3 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 dark:text-indigo-300 mb-12">About Us</h3>
+    <!-- Our Mission Section -->
+    <section id="mission" class="py-16 px-6 md:px-8 lg:px-12 bg-white dark:bg-gray-800 m-4 rounded-lg shadow-md">
+      <h3 class="text-3xl md:text-4xl font-bold text-center text-indigo-800 dark:text-indigo-300 mb-12">Our Mission</h3>
+        <!--
         <div id="headshots">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
                 <div>
@@ -116,10 +118,11 @@
                 </div>
             </div>
         </div>
+        -->
         <div id="our-mission" class="mt-16">
-            <div class="max-w-3xl mx-auto text-center">
+            <div class="max-w-5xl mx-auto text-center">
                 <p class="text-lg text-gray-700 dark:text-gray-300">
-                    ThryveOps was founded in Columbia, Maryland by Karl Quist-Therson, Ethan Addo, and Shiva Sharma with a shared vision: to help businesses not just survive, but *thrive* in the digital age. We believe that a strong digital presence is the cornerstone of modern success.
+                    ThryveOps was founded in Columbia, Maryland with a single vision: to help businesses not just survive, but <b>thrive</b> in the digital age. We believe that a strong digital presence is the cornerstone of modern success.
                 </p>
                 <p class="text-lg text-gray-700 dark:text-gray-300">
                     Our team brings a diverse range of expertise, working collaboratively on all facets of the business to deliver comprehensive and integrated brand scaling solutions. We are passionate about innovation, data-driven strategies, and building lasting relationships with our clients.
@@ -136,13 +139,30 @@
         <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Ready to Scale Your Brand?</h3>
         <div class="max-w-2xl mx-auto text-center">
             <p class="text-lg mb-8 opacity-90">
-              Book a <b>free consultation</b> to learn how ThryveOps can unlock your digital potential. Recieve a custom quote to help your business <b>Thryve</b>!
+              Request a <b>free consultation</b> to learn how ThryveOps can unlock your digital potential. Tell us a bit about your business and what you're looking for to get in touch with the team.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="mailto:thryveops@gmail.com" class="bg-white text-indigo-700 hover:bg-indigo-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    Book A Free Consultation
-                </a>
-            </div>
+            <form action="https://formspree.io/f/mgvzlqdk" method="POST" class="mt-8 space-y-6">
+                <div class="rounded-md shadow-sm">
+                    <div>
+                        <label for="name" class="sr-only">Name</label>
+                        <input id="name" name="name" type="text" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mb-4" placeholder="Name">
+                    </div>
+                    <div>
+                        <label for="email-address" class="sr-only">Email address</label>
+                        <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mb-4" placeholder="Email address">
+                    </div>
+                    <div>
+                        <label for="message" class="sr-only">Message</label>
+                        <textarea id="message" name="message" rows="4" class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Tell us a bit about your business and what you're looking for"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="group relative w-full flex justify-center py-3 px-8 border border-transparent font-bold rounded-full text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg mt-6">
+                        Request A Free Consultation
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
 

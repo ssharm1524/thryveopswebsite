@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThryveOps - Digital Strategy & Consulting</title>
-    <!-- Tailwind CSS CDN -->
+    <title>ThryveOps - Website Development</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -21,35 +19,184 @@
 </head>
 <body class="antialiased bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
 
-    <!-- Header Section -->
-    <header class="bg-gray-100 dark:bg-gray-800 shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center rounded-b-lg">
-        <div class="flex items-center">
-            <a href="../index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">ThryveOps</a>
-            <span class="ml-2 text-sm text-gray-500 dark:text-gray-400 hidden sm:block">- Digital Brand Scaling</span>
-        </div>
-        <nav class="flex items-center">
-            <ul class="flex space-x-4">
-                <li><a href="../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Home</a></li>
-                <li><a href="../index.html#services" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a></li>
-                <li><a href="../index.html#about" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">About Us</a></li>
-                <li><a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="ml-6 p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
-                <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.95 15.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM2.707 6.707a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 10a1 1 0 11-2 0 1 1 0 012 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-            </button>
-        </nav>
-    </header>
+  <header class="bg-gray-100 dark:bg-gray-800 shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center rounded-b-lg">
+      <div class="flex items-center">
+          <a href="../index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">ThryveOps</a>
+          <span class="ml-2 text-sm text-gray-500 dark:text-gray-400 hidden sm:block">Digital Brand Scaling</span>
+      </div>
+      <nav class="flex items-center">
+          <ul class="flex space-x-4">
+              <li><a href="../index.html" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Home</a></li>
+              <li><a href="../index.html#services" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a></li>
+              <li><a href="../index.html#mission" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Our Mission</a></li>
+              <li><a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" class="ml-6 p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
+              <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+              <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.95 15.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM2.707 6.707a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 10a1 1 0 11-2 0 1 1 0 012 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </button>
+      </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main class="py-16 px-6 md:px-12 lg:px-24">
-        <h1 class="text-4xl font-bold text-center text-indigo-800 dark:text-indigo-300 mb-12">Digital Strategy & Consulting</h1>
-        <div class="max-w-3xl mx-auto text-lg text-gray-700 dark:text-gray-300">
-            <p class="mb-6">We provide comprehensive digital strategy and consulting services to help you navigate the complexities of the online world. Our team works closely with you to understand your business, identify opportunities, and create a roadmap for success.</p>
-            <p class="mb-6">Our services include market analysis, competitive research, and the development of a tailored digital strategy that aligns with your business objectives. We focus on creating a sustainable and scalable digital presence that drives growth and delivers a strong return on investment.</p>
-            <p>Whether you are just starting or looking to optimize your existing digital efforts, our team has the expertise to help you succeed.</p>
+  <!-- Title Section -->
+  <section id="website_creation_title" class="relative bg-gradient-to-r from-indigo-700 to-purple-800 py-14 md:py-20 px-6 md:px-12 lg:px-24 flex items-center justify-center text-center rounded-lg m-4">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl lg:text-5xl font-bold text-white dark:text-indigo-300 mb-6">A Website That Works For You</h1>
+        <p class="text-lg lg:text-xl text-gray-200 dark:text-gray-300 mb-8">
+          Your website is your digital first impression. We design and build beautiful, high-performing websites that turn visitors into loyal customers. We make sure your site works as hard as you.
+        </p>
+        <a href="../index.html#contact" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+          Book A <b>Free</b> Consultation Today
+        </a>
+      </div>
+      <div class="md:w-1/2 flex justify-center md:justify-end">
+        <img src="../images/website.png" alt="Web Design Preview" class="w-full md:w-3/4 object-cover rounded-2xl">
+      </div>
+    </div>
+  </section>
+
+  <main class="py-16 px-6 md:px-12 lg:px-24">
+
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-5xl font-bold text-indigo-800 dark:text-indigo-300 mb-6">Websites Help Your Business Thryve</h2>
+    </div>
+
+    <div class="max-w-6xl mx-auto text-lg text-gray-700 dark:text-gray-300">
+
+      <p class="mb-6">
+        In today’s digital world, your website is often your first impression—and your most important one. A slow, outdated, or confusing website can cost you leads and credibility. That’s where we come in. We craft custom websites that look stunning, load fast, and are designed to convert. No templates, no fluff—just results.
+      </p>
+
+      <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-400 mt-10 mb-4">Our Website Creation Advantage</h2>
+      <p class="mb-6">
+        We don’t just make websites. We create strategic digital experiences built to engage, convert, and grow your brand. From design to launch, our process is streamlined, collaborative, and backed by modern development practices. Here’s how we build smarter:
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2">
+        <li><strong>Custom Design:</strong> We tailor your site’s look and feel to reflect your brand identity—not just what’s trendy.</li>
+        <li><strong>Responsive Development:</strong> Your site will look and work perfectly on all devices—desktop, tablet, and mobile.</li>
+        <li><strong>SEO Optimization:</strong> We structure your site with best practices to ensure you’re discoverable on search engines from day one.</li>
+      </ul>
+      <p class="mb-6">
+        The result? A website that doesn’t just look good—it performs like a top salesperson.
+      </p>
+
+      <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-400 mt-10 mb-4">How We Help You Grow: The Formula for Success</h2>
+      <p class="mb-6">
+        A beautiful website is only part of the equation. We build with your goals in mind, focusing on three key outcomes that move the needle:
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2">
+        <li><strong>Professional Presence:</strong> Stand out in a crowded market with a website that gives visitors confidence in your brand and services.</li>
+        <li><strong>Conversion Focus:</strong> Every layout, button, and section is built to guide visitors toward action—whether that’s booking a call, making a purchase, or signing up for your offer.</li>
+        <li><strong>Scalability:</strong> Your business will grow—and your site should grow with it. We build scalable foundations that allow for future updates, new features, and marketing integrations without starting over.</li>
+      </ul>
+
+      <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-400 mt-10 mb-4">Stop Settling for an Online Placeholder</h2>
+      <p class="mb-6">
+        You deserve more than a website that just “gets the job done.” You need one that sells, scales, and makes you proud. Whether you’re building from scratch or overhauling what’s already there, we’ll guide you every step of the way.
+      </p>
+      <p class="mb-6">
+        Ready to build something great? Let’s talk about how we can bring your vision to life—and turn it into a tool that works for your business 24/7.
+      </p>
+    </div>
+  </main>
+
+
+    
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50 dark:bg-gray-800">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-5xl font-bold text-indigo-800 dark:text-indigo-300 mb-6">Website Creation Packages</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Choose the perfect plan to launch and grow your online presence. We offer flexible packages designed for every stage of your business journey.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Starter Package -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col">
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Starter Package</h3>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Starting at $250</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li><span class="font-bold">One-page website</span></li>
+            <li>Each additional page: $100+</li>
+            <li>1 Free revision ($50/additional)</li>
+            <li>Simple Payment Platform integration: $100</li>
+          </ul>
+          <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
         </div>
-    </main>
+
+        <!-- Value Package -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col border-4 border-indigo-600 relative">
+           <span class="bg-indigo-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full absolute -top-4 right-4">Most Popular</span>
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Value Package</h3>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Starting at $500</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li><span class="font-bold">3 pages included</span></li>
+            <li>Simple Payment Platform integration</li>
+            <li>Each additional page for $100</li>
+            <li>3 revisions ($50/additional)</li>
+            <li><span class="font-bold">1 month</span> of free maintenance</li>
+          </ul>
+           <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+        </div>
+
+        <!-- Thryve Package -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col">
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Thryve Package</h3>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Starting at $1000</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li><span class="font-bold">All-inclusive website</span></li>
+            <li>End-to-end eCommerce Sites, Personal Portfolios, etc.</li>
+            <li><span class="font-bold">Unlimited revisions</span></li>
+            <li><span class="font-bold">3 months</span> of free maintenance</li>
+          </ul>
+           <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-purple-800 to-indigo-700 text-white m-4 rounded-lg shadow-md">
+      <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Ready to Scale Your Brand?</h3>
+      <div class="max-w-2xl mx-auto text-center">
+          <p class="text-lg mb-8 opacity-90">
+            Request a <b>free consultation</b> to learn how ThryveOps can unlock your digital potential. Tell us a bit about your business and what you're looking for to get in touch with the team.
+          </p>
+          <form action="https://formspree.io/f/mgvzlqdk" method="POST" class="mt-8 space-y-6">
+              <div class="rounded-md shadow-sm">
+                  <div>
+                      <label for="name" class="sr-only">Name</label>
+                      <input id="name" name="name" type="text" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mb-4" placeholder="Name">
+                  </div>
+                  <div>
+                      <label for="email-address" class="sr-only">Email address</label>
+                      <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mb-4" placeholder="Email address">
+                  </div>
+                  <div>
+                      <label for="message" class="sr-only">Message</label>
+                      <textarea id="message" name="message" rows="4" class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Tell us a bit about your business and what you're looking for"></textarea>
+                  </div>
+              </div>
+
+              <div>
+                  <button type="submit" class="group relative w-full flex justify-center py-3 px-8 border border-transparent font-bold rounded-full text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg mt-6">
+                      Request A Free Consultation
+                  </button>
+              </div>
+          </form>
+      </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white py-8 px-6 md:px-12 lg:px-24 text-center rounded-t-lg">
+    <div class="max-w-6xl mx-auto">
+        <p class="mb-4">&copy; 2025 ThryveOps LLC. All rights reserved.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+        </div>
+    </div>
+  </footer>
 
     <script>
         const themeToggle = document.getElementById('theme-toggle');

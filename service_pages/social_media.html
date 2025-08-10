@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThryveOps - Social Media Management</title>
-    <!-- Tailwind CSS CDN -->
+    <title>ThryveOps - Digital Ad Campaigns</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -21,35 +19,212 @@
 </head>
 <body class="antialiased bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-200">
 
-    <!-- Header Section -->
-    <header class="bg-gray-100 dark:bg-gray-800 shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center rounded-b-lg">
-        <div class="flex items-center">
-            <a href="../index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">ThryveOps</a>
-            <span class="ml-2 text-sm text-gray-500 dark:text-gray-400 hidden sm:block">- Digital Brand Scaling</span>
-        </div>
-        <nav class="flex items-center">
-            <ul class="flex space-x-4">
-                <li><a href="../index.html#home" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Home</a></li>
-                <li><a href="../index.html#services" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a></li>
-                <li><a href="../index.html#about" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">About Us</a></li>
-                <li><a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a></li>
-            </ul>
-            <button id="theme-toggle" class="ml-6 p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
-                <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
-                <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.95 15.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM2.707 6.707a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 10a1 1 0 11-2 0 1 1 0 012 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
-            </button>
-        </nav>
-    </header>
+  <header class="bg-gray-100 dark:bg-gray-800 shadow-sm py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center rounded-b-lg">
+      <div class="flex items-center">
+          <a href="../index.html" class="text-2xl font-bold text-indigo-600 dark:text-indigo-400">ThryveOps</a>
+          <span class="ml-2 text-sm text-gray-500 dark:text-gray-400 hidden sm:block">Digital Brand Scaling</span>
+      </div>
+      <nav class="flex items-center">
+          <ul class="flex space-x-4">
+              <li><a href="../index.html" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Home</a></li>
+              <li><a href="../index.html#services" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Services</a></li>
+              <li><a href="../index.html#mission" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Our Mission</a></li>
+              <li><a href="../index.html#contact" class="text-gray-600 dark:text-gray-300 hover:text-indigo-600 dark:hover:text-indigo-400 font-medium transition duration-300 ease-in-out">Contact</a></li>
+          </ul>
+          <button id="theme-toggle" class="ml-6 p-2 rounded-md text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none">
+              <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+              <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.121-3.536a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM10 18a1 1 0 01-1-1v-1a1 1 0 112 0v1a1 1 0 01-1 1zM4.95 15.464l-.707-.707a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414zM2.707 6.707a1 1 0 010-1.414l.707-.707a1 1 0 111.414 1.414l-.707.707a1 1 0 01-1.414 0zM4 10a1 1 0 11-2 0 1 1 0 012 0z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+          </button>
+      </nav>
+  </header>
 
-    <!-- Main Content -->
-    <main class="py-16 px-6 md:px-12 lg:px-24">
-        <h1 class="text-4xl font-bold text-center text-indigo-800 dark:text-indigo-300 mb-12">Social Media Management</h1>
-        <div class="max-w-3xl mx-auto text-lg text-gray-700 dark:text-gray-300">
-            <p class="mb-6">Our social media management services are designed to build and nurture your online community. We create and manage social media profiles on platforms such as Facebook, Instagram, Twitter, and LinkedIn to help you connect with your audience and build a strong brand presence.</p>
-            <p class="mb-6">Our services include content creation, community management, social media advertising, and performance tracking. We work with you to develop a social media strategy that aligns with your business goals and engages your target audience.</p>
-            <p>Let us help you build a strong social media presence that drives engagement, builds brand loyalty, and supports your business objectives.</p>
+  <!-- Title Section -->
+  <section id="social_media_title" class="relative bg-gradient-to-r from-indigo-700 to-purple-800 py-14 md:py-20 px-6 md:px-12 lg:px-24 flex items-center justify-center text-center rounded-lg m-4">
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      <div class="md:w-1/2 mb-8 md:mb-0">
+        <h1 class="text-4xl lg:text-5xl font-bold text-white dark:text-indigo-300 mb-6">Own the Feed. Grow Your Brand.</h1>
+        <p class="text-lg lg:text-xl text-gray-200 dark:text-gray-300 mb-8">
+          Let us take social media off your plate and put results on it. From strategy to content to posting, we manage it all—so you can focus on running your business while we grow your online presence.
+        </p>
+        <a href="../index.html#contact" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
+          Book A <b>Free</b> Consultation Today
+        </a>
+      </div>
+      <div class="md:w-1/2 flex justify-center md:justify-end">
+        <img src="../images/social_media.png" alt="Social Media Strategy Visual" class="w-full md:w-3/4 object-cover rounded-2xl">
+      </div>
+    </div>
+  </section>
+
+  <main class="py-16 px-6 md:px-12 lg:px-24">
+
+    <div class="text-center mb-12">
+      <h2 class="text-3xl lg:text-5xl font-bold text-indigo-800 dark:text-indigo-300 mb-6">How Social Media Can Help You</h2>
+    </div>
+
+    <div class="max-w-6xl mx-auto text-lg text-gray-700 dark:text-gray-300">
+
+      <p class="mb-6">
+        Your customers are online, scrolling through social media every single day. If your business isn’t showing up with value-driven content and a consistent presence, you're leaving attention—and money—on the table. We help you show up, stand out, and connect with your audience through compelling content and strategic management.
+      </p>
+
+      <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-400 mt-10 mb-4">Our Social Media Management Advantage</h2>
+      <p class="mb-6">
+        Social media success takes more than posting a few pretty pictures. Our approach combines strategy, creativity, and consistency to build your brand and engage your audience. Here’s how we make it happen:
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2">
+        <li><strong>Content Planning:</strong> We develop a clear, customized strategy aligned with your goals and audience insights.</li>
+        <li><strong>Content Creation:</strong> We craft scroll-stopping visuals and captions that reflect your brand voice, tell your story, and spark engagement.</li>
+        <li><strong>Consistent Posting:</strong> We handle scheduling and publishing to keep your feeds active, on-brand, and optimized for each platform.</li>
+      </ul>
+      <p class="mb-6">
+        Think of us as your in-house social team—without the overhead.
+      </p>
+
+      <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-400 mt-10 mb-4">How We Help You Grow: The Formula for Success</h2>
+      <p class="mb-6">
+        Every post we create and every move we make is rooted in results. We focus on three main outcomes that drive real growth:
+      </p>
+      <ul class="list-disc list-inside mb-6 space-y-2">
+        <li><strong>Brand Visibility:</strong> Show up consistently and professionally in the places your customers are already spending time—Facebook, Instagram, TikTok, and more.</li>
+        <li><strong>Audience Engagement:</strong> Build a loyal community with content that connects. We create posts that drive comments, shares, saves, and DMs—not just likes.</li>
+        <li><strong>Business Growth:</strong> Our efforts tie back to your bottom line. Whether it's growing your followers, boosting traffic, or capturing leads, we track metrics that matter and continuously optimize.</li>
+      </ul>
+
+      <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-400 mt-10 mb-4">Stop Posting Randomly. Start Growing Intentionally.</h2>
+      <p class="mb-6">
+        Great content isn’t optional—it’s expected. But planning, creating, and managing it all takes time and expertise. We do it for you with strategy and precision, so you can stop guessing and start growing.
+      </p>
+      <p class="mb-6">
+        Ready to elevate your online presence? Let’s create content your audience will love—and results your business will feel.
+      </p>
+    </div>
+  </main>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-16 px-6 md:px-12 lg:px-24 bg-gray-50 dark:bg-gray-800">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-5xl font-bold text-indigo-800 dark:text-indigo-300 mb-6">Social Media Management Packages</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Find the perfect plan to build your community and grow your brand. We offer a range of packages to fit your needs.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+        <!-- Basic Setup -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col">
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Basic Setup</h3>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Starting at $50</p>
+          <p class="text-center text-gray-500 dark:text-gray-400 mb-4">Per Platform</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li>Includes: Profile creation, bio, profile/cover image upload, basic branding.</li>
+          </ul>
+          <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
         </div>
-    </main>
+
+        <!-- Enhanced Setup -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col">
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Enhanced Setup</h3>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">Starting at $150</p>
+          <p class="text-center text-gray-500 dark:text-gray-400 mb-4">Per Platform</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li>Includes: Basic setup + keyword optimization, branded templates, linktree setup, highlight covers, etc.</li>
+          </ul>
+          <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <!-- Basic Bundle -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col">
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Basic Bundle</h3>
+          <p class="text-center text-gray-500 dark:text-gray-400 mb-4">Starting At</p>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">$500/Month</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li>1 platform setup & management</li>
+            <li>8 posts per month</li>
+            <li>Basic post quality</li>
+          </ul>
+          <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+        </div>
+
+        <!-- Growth Bundle -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col border-4 border-indigo-600 relative">
+           <span class="bg-indigo-600 text-white text-xs font-bold uppercase px-3 py-1 rounded-full absolute -top-4 right-4">Most Popular</span>
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Growth Bundle</h3>
+          <p class="text-center text-gray-500 dark:text-gray-400 mb-4">Starting At</p>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">$1000/Month</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li>1-3 platform setup & management</li>
+            <li>10-12 posts per month per platform</li>
+            <li>Basic Post Quality + Stories + Post Boosting</li>
+            <li>Basic Metric Analysis and Reports</li>
+          </ul>
+           <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+        </div>
+
+        <!-- Thryve Bundle -->
+        <div class="bg-white dark:bg-gray-700 rounded-lg shadow-lg p-6 flex flex-col">
+          <h3 class="text-2xl font-bold text-center text-indigo-700 dark:text-indigo-400 mb-4">Thryve Bundle</h3>
+          <p class="text-center text-gray-500 dark:text-gray-400 mb-4">Starting At</p>
+          <p class="text-center text-4xl font-bold text-gray-800 dark:text-gray-200 mb-4">$2000/Month</p>
+          <ul class="text-gray-700 dark:text-gray-300 space-y-2 flex-grow">
+            <li>1-4 platform setup & management</li>
+            <li>Account verification through Meta and X</li>
+            <li>Unlimited posts per month</li>
+            <li>High Post Quality</li>
+            <li>Detailed Metric Analysis and Reports</li>
+            <li>Community Engagement Management</li>
+          </ul>
+           <a href="../index.html#contact" class="mt-6 text-center bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">Get Started</a>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 text-sm text-gray-600 dark:text-gray-400">
+        <p>*Posts can be added per platform. Pricing may vary based on quality and complexity.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-12 lg:px-24 bg-gradient-to-r from-purple-800 to-indigo-700 text-white m-4 rounded-lg shadow-md">
+      <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">Ready to Scale Your Brand?</h3>
+      <div class="max-w-2xl mx-auto text-center">
+          <p class="text-lg mb-8 opacity-90">
+            Request a <b>free consultation</b> to learn how ThryveOps can unlock your digital potential. Tell us a bit about your business and what you're looking for to get in touch with the team.
+          </p>
+          <form action="https://formspree.io/f/mgvzlqdk" method="POST" class="mt-8 space-y-6">
+              <div class="rounded-md shadow-sm">
+                  <div>
+                      <label for="name" class="sr-only">Name</label>
+                      <input id="name" name="name" type="text" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mb-4" placeholder="Name">
+                  </div>
+                  <div>
+                      <label for="email-address" class="sr-only">Email address</label>
+                      <input id="email-address" name="email" type="email" autocomplete="email" required class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm mb-4" placeholder="Email address">
+                  </div>
+                  <div>
+                      <label for="message" class="sr-only">Message</label>
+                      <textarea id="message" name="message" rows="4" class="appearance-none rounded-md relative block w-full px-3 py-3 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Tell us a bit about your business and what you're looking for"></textarea>
+                  </div>
+              </div>
+
+              <div>
+                  <button type="submit" class="group relative w-full flex justify-center py-3 px-8 border border-transparent font-bold rounded-full text-white bg-indigo-700 hover:bg-indigo-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out transform hover:scale-105 shadow-lg mt-6">
+                      Request A Free Consultation
+                  </button>
+              </div>
+          </form>
+      </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="bg-gray-900 text-white py-8 px-6 md:px-12 lg:px-24 text-center rounded-t-lg">
+    <div class="max-w-6xl mx-auto">
+        <p class="mb-4">&copy; 2025 ThryveOps LLC. All rights reserved.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+            <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+        </div>
+    </div>
+  </footer>
 
     <script>
         const themeToggle = document.getElementById('theme-toggle');
